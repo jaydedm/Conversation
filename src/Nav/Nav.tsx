@@ -15,7 +15,17 @@ export default function Nav() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Hi-Mountain
           </Typography>
-          <Button color="inherit">Login</Button>
+          {/* add href="" to turn button to a link */}
+          <Button 
+            // applying own style by passing in style prop - can override some of the custom styles
+            style={{
+              fontSize: 30
+            }}
+            size="large"
+            variant="contained" 
+            color="secondary">
+            Login
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>
