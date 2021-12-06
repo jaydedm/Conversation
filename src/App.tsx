@@ -1,7 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
 import Nav from "./Nav/Nav";
-import { render } from "react-dom";
+// import { render } from "react-dom";
 import {
   BrowserRouter,
   Routes,

@@ -3,11 +3,11 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import NavMenu from "./NavMenu";
-import LoginIcon from '@mui/icons-material/Login';
+import NavButton from "../components/navButton/NavButton";
+// import Button from "@mui/material/Button";
+// import LoginIcon from '@mui/icons-material/Login';
 
-// DRY - use state to render each button's info instead of writing it out thirty times!!!!
 
 export default function Nav() {
   return (
@@ -15,42 +15,17 @@ export default function Nav() {
       <AppBar position="static">
         <Toolbar>
           <NavMenu />
-          <Button 
-              style={{
-              fontSize: 20, 
-              color: "white"
-            }}
-            variant="text" 
-            href="/admin"
-            >
-            Admin
-          </Button>
-          <Button 
-              style={{
-              fontSize: 20, 
-              color: "white"
-            }}
-            variant="text" 
-            href="/"
-            >
-            Home
-          </Button>
-          <Button 
-              style={{
-              fontSize: 20, 
-              color: "white"
-            }}
-            variant="text" 
-            href="/menu"
-            >
-            Menu
-          </Button>
+          {/* could loop through this info too */}
+          <NavButton page="/admin" description="admin"></NavButton>
+          <NavButton page="/" description="home"></NavButton>
+          <NavButton page="/menu" description="menu"></NavButton>
 
-           <Typography variant="h6" component="div" sx={{ flexGrow: 2 }}>
+           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Hi-Mountain
            </Typography>
 
-          <Button 
+           {/* login button */}
+          {/* <Button 
             style={{
               fontSize: 20, 
               color: "white"
@@ -60,7 +35,7 @@ export default function Nav() {
             variant="text"
             >
             Login
-          </Button>
+          </Button> */}
         </Toolbar>
       </AppBar>
     </Box>
