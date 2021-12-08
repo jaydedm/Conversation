@@ -14,7 +14,6 @@ export const NavButton = ({ page, description }: NavButtonProps): ReactElement =
             fontSize: 20, 
             color: "white"
           }}
-            // variant="text" 
             href={page}
             >
             {description}
