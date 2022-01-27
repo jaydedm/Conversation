@@ -6,7 +6,6 @@ interface NavButtonProps {
     description: string
 }
 
-
 export const NavButton = ({ page, description }: NavButtonProps): ReactElement => {
         return(
             <Button 

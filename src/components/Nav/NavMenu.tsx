@@ -6,11 +6,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { ReactElement } from "react";
 
 export const NavMenu = (): ReactElement => {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null); 
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
+
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -31,6 +32,8 @@ export const NavMenu = (): ReactElement => {
       >
         <MenuIcon />
       </IconButton>
+
+      
       <Menu
         id="basic-menu"
         anchorEl={anchorEl}
@@ -40,6 +43,7 @@ export const NavMenu = (): ReactElement => {
           "aria-labelledby": "basic-button",
         }}
       >
+
         <MenuItem onClick={handleClose}>Home</MenuItem>
         <MenuItem onClick={handleClose}>History</MenuItem>
         <MenuItem onClick={handleClose}>Menu</MenuItem>
