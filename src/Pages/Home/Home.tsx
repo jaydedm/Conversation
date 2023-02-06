@@ -2,7 +2,9 @@ import { ReactElement } from "react";
 
 export const Home = (): ReactElement => {
     return(
-        <p>Welcome to Conversation, Chris and Dave!</p>
+        <div style={{marginTop: '10vh'}}>
+        <p>We make very yummy burgers.</p>
+        </div>
     )
 };
 
