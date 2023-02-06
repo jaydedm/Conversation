@@ -23,7 +23,7 @@ export const NavMenu = (): ReactElement => {
         edge="start"
         color="inherit"
         aria-label="menu"
-        sx={{ mr: 2 }}
+        sx={{pl: 4}}
         aria-controls="basic-menu"
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
@@ -43,6 +43,7 @@ export const NavMenu = (): ReactElement => {
         <MenuItem onClick={handleClose}>Home</MenuItem>
         <MenuItem onClick={handleClose}>History</MenuItem>
         <MenuItem onClick={handleClose}>Menu</MenuItem>
+        <MenuItem onClick={handleClose}>Admin</MenuItem>
       </Menu>
     </div>
   );
